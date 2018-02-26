@@ -1,0 +1,104 @@
+.fifth {
+  margin-left: 10%;
+  margin-right: 10%;
+
+  p {
+    color: $dark-grey;
+    font-size: 0.8em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 1.6;
+    font-weight: 200;
+  }
+
+  .tittle {
+    @include title;
+    text-align: center;
+  }
+
+  hr {
+    @include underline;
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+
+  .offer {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30%;
+
+    &:hover {
+      .top {
+        background-color: $my-pink;
+      }
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin-bottom: 0;
+      letter-spacing: 0.5px;
+    }
+
+    .top {
+      background-color: $dark-grey;
+      color: white;
+      height: 125px;
+      transition: 500ms;
+    }
+
+    .bottom {
+      background-color: white;
+      text-align: center;
+
+      p {
+        padding-top: 20%;
+        color: $dark-grey;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+        line-height: 2.5;
+        margin-top: 0;
+        font-weight: 200;
+      }
+    }
+
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+      padding-top: 20px;
+
+      &::before {
+        content: "$";
+        font-size: 0.5em;
+        padding-bottom: 10px;
+      }
+    }
+
+    h2 {
+      font-size: 0.7em;
+      padding-bottom: 20%;
+    }
+
+    p {
+      line-height: 2;
+    }
+  }
+
+  .grey {
+    @include greybutton;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: absolute;
+    top: 105px;
+    width: 70%;
+  }
+
+  button {
+    @include mybutton;
+    width: 70%;
+    margin-bottom: 15%;
+  }
+}

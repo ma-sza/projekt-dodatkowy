@@ -1,0 +1,57 @@
+.third {
+  background-color: white;
+  padding-top: 5%;
+
+  .row {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .flex-container {
+    align-items: center;
+  }
+
+  h1 {
+    @include title;
+    text-align: center;
+  }
+
+  hr {
+    @include underline;
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+
+  p {
+    color: $dark-grey;
+    font-size: 0.8em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 1.6;
+    font-weight: 200;
+  }
+
+  .icon {
+    border: 2px solid rgba(0, 0, 0, .30);
+    align-self: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 0.7em;
+    color: $my-pink;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10;
+  }
+}

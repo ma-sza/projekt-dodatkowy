@@ -1,0 +1,54 @@
+
+$my-grey: #F4F4F4;
+$dark-grey: #5A5A5A;
+$my-pink: #ED145B;
+@mixin mybutton {
+  border-radius: 20px;
+  background-color: $my-pink;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12px;
+  height: 40px;
+  width: 150px;
+  transition: 300ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+@mixin greybutton {
+  border-radius: 20px;
+  background-color: $my-grey;
+  color: $dark-grey;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12px;
+  height: 40px;
+  width: 150px;
+  transition: 300ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+@mixin title {
+    color: $dark-grey;
+    font-weight: 200;
+    font-size: 2em;
+    font-style: italic;
+    padding-top: 10%;
+
+}
+
+
+@mixin underline {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid $my-pink;
+
+    padding: 0;
+  }

@@ -1,0 +1,38 @@
+.fourth {
+  background-image: url("https://image.ibb.co/jKHUrS/background.png");
+  position: relative;
+  height: auto;
+
+  img {
+    height: 40px;
+  }
+
+
+  .quote1,
+  .quote2 {
+    text-align: center;
+    display: block;
+  }
+
+  .quote1 {
+    padding-top: 6%;
+    padding-bottom: 4%;
+  }
+
+  .quote2 {
+    padding-top: 4%;
+    padding-bottom: 6%;
+  }
+
+  p {
+    color: $my-grey;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}

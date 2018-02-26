@@ -1,0 +1,48 @@
+.second {
+  background-color: $my-grey;
+  margin-top: 70px;
+  margin-bottom: 55px;
+
+  h2 {
+    @include title;
+  }
+
+  p {
+    color: $dark-grey;
+    font-weight: 200;
+    line-height: 1.8;
+  }
+
+  p {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  hr {
+    @include underline;
+    margin-right: 60%;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: $my-pink;
+
+    .fa {
+      font-size: 15px;
+    }
+  }
+
+  .with-macbook {
+    position: relative;
+  }
+
+  img {
+    width: 800px;
+    position: absolute;
+    top: 70px;
+    left: -0px;
+  }
+}

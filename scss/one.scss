@@ -1,0 +1,113 @@
+.first {
+  background-image: url("https://image.ibb.co/jKHUrS/background.png");
+  background-size: cover;
+  height: 600px;
+  margin: 0;
+}
+
+nav::after,
+nav::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  h1 {
+    font-weight: 900;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $my-pink;
+      }
+
+      &::before {
+        content: "///";
+        letter-spacing: 4px;
+        color: $my-pink;
+        font-weight: 900;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      font-size: 0.8em;
+
+      a {
+        line-height: 50px;
+        padding: 0 20px;
+        display: block;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 0.4;
+
+        &:hover {
+          color: $my-pink;
+        }
+      }
+    }
+  }
+}
+
+.first::after,
+.second::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.first {
+  &:after {
+    top: 565px;
+    background-color: $my-pink;
+    transform: skewY(-2deg) translateY(1px);
+  }
+
+  .main-text {
+    text-align: center;
+    margin-top: 10%;
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-weight: 200;
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    hr {
+      @include underline;
+      margin-right: 40%;
+      margin-left: 40%;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      font-weight: 200;
+      line-height: 1.6;
+      letter-spacing: 0.7px;
+    }
+
+    button {
+      @include mybutton;
+      margin-top: 3%;
+    }
+  }
+}
